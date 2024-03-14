@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function giaiPhuongTrinhBac1() {
+            var a = parseFloat(document.getElementById('A').value);
+            var b = parseFloat(document.getElementById('B').value);
+            if (isNaN(a) || isNaN(b)) {
+                alert('Vui lòng nhập số hợp lệ cho hệ số a và b.');
+            } else {
+                if (a === 0) {
+                    if (b === 0) {
+                        document.getElementById('ketqua').innerText = 'Phương trình có vô số nghiệm';
+                    } else {
+                        document.getElementById('ketqua').innerText = 'Phương trình vô nghiệm';
+                    }
+                } else {
+                    var x = -b / a;
+                    document.getElementById('ketqua').innerText = 'Nghiệm của phương trình là: x = ' + x;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <>
+    <center>
+        <h1>Giải phương trình bậc 1</h1>
+        <input type="text" id="A" placeholder="Nhập hệ số a"> <br>
+        <input type="text" id="B" placeholder="Nhập hệ số b"> <br>
+        <button onclick="giaiPhuongTrinhBac1()">Giải phương trình</button>
+        <p> KẾT QUẢ</p>
+        <p id="ketqua"></p>
+    
+</center>
+
+
+</body>
+</html>

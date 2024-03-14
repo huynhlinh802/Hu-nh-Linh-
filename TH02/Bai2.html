@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Nhập dữ liệu: ");
+        String userInput = scanner.nextLine();
+        System.out.println("Bạn đã nhập: " + userInput);
+        scanner.close();
+    }
+}
+</script> 
+
+</head>
+<body>
+  <center>
+    <h2 span style="color:blueviolet;">ĐÓNG GÓP Ý KIẾN VỀ SẢN PHẨM</h2>
+    <p>Góp ý của bạn sẽ được chúng tôi xem xét, vui lòng nhập tiếng Việt có dấu</p>
+    <p>Các ý kiến đóng nên viết chi tiết rõ ràng, kèm theo các minh chứng xác thực thời gian và địa điểm (nếu có)</p>
+
+        <p><input type = "Họ và tên" name="Họ và tên" placeholder="Họ và tên"/>
+        <input type = "Họ và tên" name="Họ và tên" placeholder="Mã thẻ"/></p> 
+
+        <p><input type = "number" name="SĐT" placeholder="Số điện thoại"/>
+        <input type = "Mail" name="Mail" placeholder="E-mail"/></p>
+        <p> <input type = "KH" name="KH" placeholder="Chọn loại khách hàng"/>
+        <input type = "Mã hóa đơn" name="MHĐ" placeholder="Mã hóa đơn"/></p>    
+        <p><input style="height: 70px; width: 340px;" type = "Mô tả" name="Mô tả" placeholder="Nhập chi tiết mô tả"/></p>
+  
+    <p><button>GỬI GÓP Ý</button></p>
+</center>
+
+</body>
+</html>
